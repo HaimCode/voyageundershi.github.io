@@ -1,0 +1,394 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.959);
+    color: white;
+
+}
+header{
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px;
+    font-style:italic;
+    font-weight: bold;
+    background: linear-gradient(50deg,rgba(0, 128, 0, 0.801),rgba(0, 128, 0, 0.527));
+}
+header span {
+    background: linear-gradient(130deg,blue,red,maroon);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+    font-size: 25px;
+    letter-spacing: -1px;
+    font-style: italic;
+    font-weight: bold;
+}
+.span_2{
+    
+    letter-spacing: -2.5px;
+    font-size: 19px;
+    font-style: initial;
+}
+header nav ul{
+    gap: 100px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: center;
+}
+header nav ul a{
+    color: white;
+    text-decoration: none;
+    transition: 2s;
+}
+#log_in a{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ff0000cc;
+}
+header a:hover{
+    font-size: 25px;
+    color: #ff000065;
+}
+#log_in a:hover{
+    font-size: 30px;
+    color: #ff00005d;
+}
+#reservation{
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: linear-gradient(90deg,#0000ff54,#0000ffcb);
+    transition:2s;
+    animation: reserve 10s alternate infinite;
+}
+#reservation:hover{
+    scale:1.1;
+    rotate:5deg
+}
+.carre{
+    margin: 5px;
+    height: 0.2vh;
+    background-color: black;
+    width: 17px; 
+}
+.ca{
+    display: none;
+}
+
+.bar{
+    display: flex;
+    gap: 150px;
+}
+
+
+main{
+   
+    text-align: center;
+    color: green;
+    background: blue;
+    background-image: url("media/image-principale.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 200px;    
+    padding-bottom: 150px;
+}
+main .ecrit p{
+    color: white;
+}
+
+main button a{
+    text-decoration: none;
+    color: white;
+}
+main button{
+    margin-top: 30px;
+    padding: 13px 40px;
+    background: linear-gradient(90deg,#0000ff54,#0000ffcb);
+    border-radius: 5px;
+    border: 1px solid white;
+    animation: reserve 5s  infinite;
+    
+}
+
+article .article_one{
+    margin-top: 100px;
+    display: grid;   
+    grid-template-columns: repeat(3,auto);
+    justify-content: space-around;
+   
+}
+
+article img{
+    width: 250px;
+    height: 40vh;
+    border-radius: 12px;
+    transition: 0.4s;
+
+}
+article img:hover{
+    box-shadow: 0 0 20px #29d9d5;
+    
+   
+}
+form{
+    margin: 40px auto;
+    display: flex;
+    gap: 100px;
+    border:1px solid white ;
+    padding: 10px 0;
+}
+form input{
+    padding: 10px 50px;
+}
+form button{
+    padding: 1px 60px;
+    background: green;
+    font-style: italic;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+.main_end{
+    font-style: italic;
+    font-weight: lighter;
+    color: whitesmoke;
+    text-align: center;
+    background: url("media/phare.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px;
+    text-shadow: 10px 5px 7px rgba(0, 0, 0, 0.425);
+}
+.main_end button{
+    padding: 10px 20px ;
+    box-shadow: 10px 5px 7px rgba(0, 0, 0, 0.432);
+    
+}
+.true_main_end{
+    margin-bottom: 180px;
+}
+.true_main_end p{
+    margin-top: 20px;
+}
+.true_main_end p span{
+    background: wheat;
+    margin-left: 20px;
+    
+}
+.true_main_end img{
+    width: 500px;
+    height: 50vh;
+    margin-top: 100px;
+    box-shadow: 0 0 20px #29d9d5;
+    border-radius:12px ;
+    transition: 0.4s;
+}
+.true_main_end img:hover{
+    box-shadow: 0 0 20px black
+}
+.true_main_end {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-left:350px;
+}
+.end{
+    padding:200px 500px 100px;
+    background: url("media/vignes.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;   
+    text-align: center; 
+}
+.end h4{
+    margin-left: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+footer{  
+    margin: 50px 20px 30px;
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+    align-items: center;
+}
+footer a{
+    list-style-type: none;
+    display: block;
+    text-decoration: none;
+}
+.footer_one span{
+    background: linear-gradient(130deg,blue,red,maroon);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+    font-size: 30px;
+    letter-spacing: -1px;
+    font-style: italic;
+    font-weight: bold;
+}
+.footer_one{
+    text-align: center;
+}
+.footer_one p {
+    margin-top: 30px;
+}
+.footer_one abbr{
+    text-decoration: none;
+    font-style: italic;
+}
+.lien,.lien_2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.end span{
+    background: linear-gradient(130deg,blue,red,maroon);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+    font-size: 35px;
+    letter-spacing: -1px;
+    font-style: italic;
+    font-weight: bold;
+    font-family:  Courier, monospace;
+    
+}
+footer a{
+    transition: 0.5s;
+}
+footer a:hover{
+    font-size: 18px
+}
+article{
+    transition: 3s;
+    transform: translateY(100%);
+}
+
+.true_main_end img{
+    transition: 3s;
+    transform: translateY(100%);   
+}
+
+.footer_one h1{
+    transition: 3s;
+    transform: translateY(100%);      
+}
+
+
+@keyframes reserve {
+    100%{
+        rotate: 7deg;
+    }
+    50%{
+        rotate: -7deg;
+    }
+}
+
+@media(max-width:912px){
+    header nav ul{
+        gap: 10px;
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content: center;
+    }
+    #reservation{
+        padding: 10px;
+    }
+    .ca{
+        display: inline;
+        
+    }
+    header{
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+    }
+    header nav{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        justify-content: center;
+    }
+    .bar{
+        display: none;
+    }
+    .bar2{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 200px;
+        margin-right: 390px;
+        gap:20px;
+        border: 1px solid black;
+        border-bottom: 1px solid wheat;
+        transition: 4s;
+    }
+    article .article_one{
+        margin-top: 100px;
+        display: grid;   
+        grid-template-columns: repeat(1,auto);
+        justify-content: space-around;
+    }
+    article .article_one img{
+        margin-bottom: 50px;
+    }    
+    form{
+        flex-direction: column;        
+        display: flex;
+        border:1px solid white ; 
+    }  
+    .main_end #sup{
+        display: none;
+    }
+    .true_main_end {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left:50px;
+    }
+    .true_main_end img{
+        width: 300px;
+    }
+    .end{
+        margin-right: 100px;
+        padding:200px 125px 100px;
+        background: url("media/vignes.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;   
+        text-align: center; 
+    }
+    .end h3,h4{
+        display: none;
+    }
+    footer{  
+        margin: 50px 20px 30px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+    }
+    .footer_one span{
+        background: linear-gradient(130deg,blue,red,maroon);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        color: transparent;
+        font-size: 20px;
+        letter-spacing: -1px;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+}
